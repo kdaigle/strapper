@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'strapper'
+require 'commander/import'
+
+program :version, File.read('VERSION')
+program :description, 'A tool to help bootstrap your computer for use with a particular project'
+
+default_command :install
+
+command :install do |c|
+
+  c.description = 'Install and setup the application'
+  c.action do |args, options|
+
+    strapfile = File.join(Dir.pwd, 'Strapfile')
+    strapper = Strapper::Parser.new
+    strapper.eval_strapfile(strapfile)
+
+    puts "All dependencies installed"
+
+  end
+
+end
