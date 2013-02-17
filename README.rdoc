@@ -1,9 +1,26 @@
-= strapper
+= Strapper
 
-Description goes here.
+The intention of Strapper is to have a "Gemfile" style way to setup the dependencies to run a project. This is inherently soft compared to Boxen or Vagrant but is intended to allow a bit less specific of a setup in environments where a stricter setup may not be possible.
+
+== Example Stapfile
+
+```
+homebrew
+
+brew "mysql"
+brew "mongodb"
+brew "redis"
+brew "memcached"
+brew "rbenv"
+brew "ruby-build"
+brew "imagemagick"
+brew "phantomjs"
+
+pow
+```
 
 == Contributing to strapper
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
