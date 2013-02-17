@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kyle Daigle"]
   s.date = "2013-02-17"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Strapper is a tool to help you make sure your environment is ready to run your project. It uses things like Homebrew to install the required tools but is softer than Boxen or Vagrant to manage what you need."
   s.email = "kyle@digitalworkbox.com"
   s.executables = ["strapper"]
   s.extra_rdoc_files = [
@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
     "lib/strapper/recipes/homebrew.rb",
     "lib/strapper/recipes/pow.rb",
     "lib/strapper/registry.rb",
+    "strapper.gemspec",
     "test/helper.rb",
     "test/test_strapper.rb"
   ]
@@ -41,7 +42,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.23"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "A simple tool to help you manage dependencies and other 'bootstrap' tasks for your project."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
