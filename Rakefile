@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "strapper"
   gem.homepage = "http://github.com/kdaigle/strapper"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A simple tool to help you manage dependencies and other 'bootstrap' tasks for your project.}
+  gem.description = %Q{Strapper is a tool to help you make sure your environment is ready to run your project. It uses things like Homebrew to install the required tools but is softer than Boxen or Vagrant to manage what you need.}
   gem.email = "kyle@digitalworkbox.com"
   gem.authors = ["Kyle Daigle"]
   # dependencies defined in Gemfile
