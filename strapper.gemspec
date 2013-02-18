@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "strapper"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kyle Daigle"]
-  s.date = "2013-02-17"
+  s.date = "2013-02-18"
   s.description = "Strapper is a tool to help you make sure your environment is ready to run your project. It uses things like Homebrew to install the required tools but is softer than Boxen or Vagrant to manage what you need."
   s.email = "kyle@digitalworkbox.com"
   s.executables = ["strapper"]
@@ -24,7 +24,6 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.md",
     "Rakefile",
-    "VERSION",
     "bin/strapper",
     "lib/strapper.rb",
     "lib/strapper/brew.rb",
@@ -34,6 +33,7 @@ Gem::Specification.new do |s|
     "lib/strapper/recipes/homebrew.rb",
     "lib/strapper/recipes/pow.rb",
     "lib/strapper/registry.rb",
+    "lib/strapper/version.rb",
     "strapper.gemspec",
     "test/helper.rb",
     "test/test_strapper.rb"
