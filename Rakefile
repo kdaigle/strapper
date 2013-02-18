@@ -2,6 +2,8 @@
 
 require 'rubygems'
 require 'bundler'
+require_relative 'lib/strapper/version'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -21,6 +23,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Strapper is a tool to help you make sure your environment is ready to run your project. It uses things like Homebrew to install the required tools but is softer than Boxen or Vagrant to manage what you need.}
   gem.email = "kyle@digitalworkbox.com"
   gem.authors = ["Kyle Daigle"]
+  gem.version = Strapper::Version::STRING
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -33,13 +36,3 @@ Rake::TestTask.new(:test) do |test|
 end
 
 task :default => :test
-
-require 'rdoc/task'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "strapper #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end

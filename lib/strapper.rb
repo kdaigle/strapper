@@ -1,3 +1,4 @@
+require "strapper/version"
 require "strapper/brew"
 require "strapper/cmd"
 

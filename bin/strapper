@@ -3,7 +3,7 @@
 require 'strapper'
 require 'commander/import'
 
-program :version, File.read('VERSION')
+program :version, Strapper::Version::STRING
 program :description, 'A tool to help bootstrap your computer for use with a particular project'
 
 default_command :install
